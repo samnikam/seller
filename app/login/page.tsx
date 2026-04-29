@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import PublicNav from "@/components/layout/PublicNav";
+import Footer from "@/components/layout/Footer";
 
 const roles = [
   {
@@ -37,35 +39,7 @@ export default function LoginPage() {
 
   return (
     <div className="bg-surface font-body text-on-surface overflow-x-hidden min-h-screen flex flex-col">
-      {/* Top nav */}
-      <header className="bg-surface backdrop-blur-md opacity-95 flex justify-between items-center px-8 py-4 w-full max-w-[1920px] mx-auto top-0 sticky z-50 shadow-xl shadow-primary/5">
-        <Link
-          href="/"
-          className="text-2xl font-black tracking-tight text-primary uppercase font-headline"
-        >
-          GovSeller
-        </Link>
-        <nav className="hidden md:flex gap-8">
-          {["Marketplace", "Bids", "Analytics"].map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="text-slate-500 hover:text-primary font-body font-medium transition-colors"
-            >
-              {item}
-            </a>
-          ))}
-        </nav>
-        <div className="flex items-center gap-6">
-          <button className="material-symbols-outlined text-primary">search</button>
-          <Link
-            href="/marketplace"
-            className="bg-primary text-white px-6 py-2 rounded-xl font-headline font-bold text-sm"
-          >
-            Portal Access
-          </Link>
-        </div>
-      </header>
+      <PublicNav />
 
       {/* Main */}
       <main className="min-h-[calc(100vh-80px)] flex items-center justify-center relative p-6 flex-1">
@@ -271,29 +245,7 @@ export default function LoginPage() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="max-w-[1920px] mx-auto px-8 py-10 flex flex-col md:flex-row justify-between items-center gap-6 border-t border-surface-container-high bg-surface-container-low/30">
-        <div className="flex items-center gap-6">
-          <span className="text-xs font-headline font-bold text-primary/40 uppercase tracking-tighter">
-            GovSeller OS v4.2
-          </span>
-          <div className="h-4 w-px bg-outline-variant" />
-          <p className="text-[10px] text-on-surface-variant/60 uppercase tracking-widest">
-            Global Standards Compliance: ISO 27001 | SOC2 Type II
-          </p>
-        </div>
-        <div className="flex gap-6">
-          {["Privacy Charter", "Terms of Trade", "Support Desk"].map((link) => (
-            <a
-              key={link}
-              href="#"
-              className="text-[10px] font-headline font-bold text-on-surface-variant/60 hover:text-primary uppercase tracking-widest transition-colors"
-            >
-              {link}
-            </a>
-          ))}
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
