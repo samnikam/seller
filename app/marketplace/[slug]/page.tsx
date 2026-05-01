@@ -121,7 +121,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
           <span className="text-[#333] font-medium">{data.title}</span>
         </div>
 
-        <h1 className="text-2xl font-bold text-[#333] mb-6">{data.title} - Suppliers & Prices</h1>
+        <h1 className="text-2xl md:text-3xl font-bold text-[#333] mb-6">{data.title} - Suppliers & Prices<span className="block w-24 h-1 bg-gradient-to-r from-[#008080] to-[#34a853] rounded-full mt-2" /></h1>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {data.listings.map((item) => (

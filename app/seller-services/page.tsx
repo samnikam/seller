@@ -66,7 +66,6 @@ export default function SellerServicesPage() {
           <div className="absolute inset-0 bg-black/60" />
         </div>
         <div className="max-w-4xl mx-auto relative z-10 text-center space-y-5 px-4 md:px-8">
-          <p className="text-secondary-container text-xs font-medium uppercase tracking-widest">Full Lifecycle Seller Support</p>
           <h1 className="text-3xl md:text-4xl font-bold text-white font-headline">
             End-to-End Support for <span className="text-[#7eda9a]">Government Sellers</span>
           </h1>
@@ -129,7 +128,7 @@ export default function SellerServicesPage() {
         {/* ── 3. Core Services ── */}
         <section id="services" className="py-14 border-t border-outline-variant/10">
           <div className="text-center mb-10">
-            <h2 className="text-xl font-medium text-primary font-headline">Our Services</h2>
+            <h2 className="text-2xl md:text-3xl font-medium text-primary font-headline">Our Services<span className="block w-24 h-1 bg-gradient-to-r from-secondary to-secondary-container rounded-full mt-3 mx-auto" /></h2>
             <p className="text-sm text-on-surface-variant mt-2">Everything you need to execute your government project successfully.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -153,7 +152,7 @@ export default function SellerServicesPage() {
       {/* ── How It Works ── */}
       <section className="max-w-6xl mx-auto px-8 py-14 border-t border-outline-variant/10">
         <div className="text-center mb-10">
-          <h2 className="text-xl font-medium text-primary font-headline">How It Works</h2>
+          <h2 className="text-2xl md:text-3xl font-medium text-primary font-headline">How It Works<span className="block w-24 h-1 bg-gradient-to-r from-secondary to-secondary-container rounded-full mt-3 mx-auto" /></h2>
         </div>
         {/* Desktop */}
         <div className="hidden md:block relative">

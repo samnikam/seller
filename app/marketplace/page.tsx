@@ -128,7 +128,7 @@ export default function MarketplacePage() {
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h1 className="text-2xl font-black text-primary font-headline">All Products</h1>
+              <h1 className="text-2xl md:text-3xl font-black text-primary font-headline">All Products<span className="block w-24 h-1 bg-gradient-to-r from-secondary to-secondary-container rounded-full mt-2" /></h1>
               <p className="text-sm text-on-surface-variant mt-1">
                 Showing {filteredProducts.length} of {products.length} products
                 {selectedCategories.size > 0 && (

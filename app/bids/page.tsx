@@ -231,7 +231,7 @@ export default function BidListingPage() {
         {/* Header & Search */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
           <div className="flex items-center gap-3">
-            <h1 className="text-2xl font-bold text-[#333]">Bid Listing</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-[#333]">Bid Listing<span className="block w-24 h-1 bg-gradient-to-r from-[#002869] to-[#4285f4] rounded-full mt-2" /></h1>
           </div>
           <form onSubmit={(e) => { e.preventDefault(); handleSearch(); }} className="flex items-center gap-0 w-full md:w-auto">
             <span className="material-symbols-outlined text-[#666] mr-2 text-lg cursor-help hidden sm:block">info</span>

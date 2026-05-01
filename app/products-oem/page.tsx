@@ -121,7 +121,7 @@ export default function ProductsOemPage() {
 
         {/* Trust Section */}
         <section className="py-12">
-          <h2 className="text-xl font-bold text-[#333] text-center mb-10">Why Trust Our OEM Network?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#333] text-center mb-10">Why Trust Our OEM Network?<span className="block w-24 h-1 bg-gradient-to-r from-[#008080] to-[#34a853] rounded-full mt-3 mx-auto" /></h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: "verified_user", title: "100% Verified", desc: "Every OEM undergoes rigorous KYC and quality verification.", color: "text-blue-600", line: "bg-blue-600" },
@@ -141,7 +141,7 @@ export default function ProductsOemPage() {
 
         {/* CTA */}
         <section className="bg-gradient-to-br from-[#001845] to-[#002869] rounded-2xl p-8 text-center space-y-4">
-          <h2 className="text-xl font-bold text-white">Can&apos;t find the right OEM?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white">Can&apos;t find the right OEM?<span className="block w-24 h-1 bg-white/40 rounded-full mt-3 mx-auto" /></h2>
           <p className="text-white/70 text-sm">Submit your requirement and we&apos;ll match you with the best manufacturers.</p>
           <Link href="/#requirement-form" className="inline-block px-6 py-3 bg-white text-[#002869] font-bold text-sm rounded-xl hover:bg-white/90 transition-colors">
             Submit Requirement
